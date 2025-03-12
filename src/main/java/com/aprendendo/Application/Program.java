@@ -14,6 +14,7 @@ public class Program {
         Pessoa p = new Pessoa(null,"Carlos da Silva", "carlos@gmail.com");
         Pessoa p1 = new Pessoa(null,"Ana Clara", "ana@gmail.com");
         Pessoa p2 = new Pessoa(null,"Josefa Silva", "josefa@gmail.com");
+        System.out.println("Pessoa ID: " + p.getId());
 
         em.getTransaction().begin();
         em.persist(p);
